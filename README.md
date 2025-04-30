@@ -1,4 +1,4 @@
-# RootLend Documentation [Web App](https://rootlend.vercel.app) / [Demo Video]()
+# RootLend Documentation [Web App](https://rootlend.vercel.app) / [Demo Video](https://youtu.be/o1NXOmiPzio)
 ![File](https://supposed-emerald-snake.myfilebase.com/ipfs/QmV6pnTFjdkpykzzD86e5XWofuQ3sAawHDqwzEYyEL4kfX)
 RootLend is a next-generation DeFi protocol transforming peer-to-peer (P2P) lending and borrowing through a secure, collateral-backed dApp. Designed to overcome the inefficiencies of traditional finance, RootLend offers users a faster, more transparent, and more accessible lending experience. By integrating AI-driven loan evaluation and automated funding mechanisms, the platform intelligently matches eligible borrowers with available capital—streamlining decision-making, reducing wait times, and maximizing efficiency for both lenders and borrowers.
 
