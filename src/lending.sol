@@ -50,7 +50,7 @@ contract P2PLending is Ownable(msg.sender) {
     address public dao;
     uint public totalServiceCharges;
 
-    address public aiOperator = 0x82aD97bEf0b7E17b1D30f56e592Fc819E1eeDAfc; // 👈 New: AI Operator address
+    address public aiOperator = 0x5ABc91e3183A131f647C75795b97b39A760A4368; // 👈 New: AI Operator address
 
     event LoanCreated(uint loanId, uint amount, uint interest, uint duration, uint fundingDeadline, address borrower, address lender);
     event LoanFunded(uint loanId, address funder, uint amount);
