@@ -84,7 +84,7 @@ export default function Dashboard(){
       <div className='p-[0.4cm] menuitems4' onClick={(e) => setDisplayComponent("swaptokens") & changeBg5(e)} style={{background:bgColor5}}>Swap <img src="images/swapimage.png" width="20" className='ml-[0.2cm]' style={{display:"inline-block"}}/></div>
       </div>
       <div className='mt-[15%] p-[0.5cm]' style={{display:"block"}}>
-       <Link href="https://github.com/jerydam/rootlend/blob/main/README.md"><button className='m-[0.2cm] rounded-md bg-[#209] px-[0.3cm] py-[0.15cm] text-[#fff]'>Docs <img src="images/documentation.png" width="17" className='ml-[0.2cm]' style={{display:"inline-block"}}/></button></Link>
+       <Link href="https://github.com/jerydam/RootLend/blob/master/README.md"><button className='m-[0.2cm] rounded-md bg-[#209] px-[0.3cm] py-[0.15cm] text-[#fff]'>Docs <img src="images/documentation.png" width="17" className='ml-[0.2cm]' style={{display:"inline-block"}}/></button></Link>
        <Link href="https://x.com/rootstock_io?t=t4ABY-X_oq4i55iq3qwurQ&s=09"><img src="images/twitter.png" width="35" className='m-[0.2cm]' style={{display:"inline-block"}}/></Link>
       </div>
    </div>
@@ -104,7 +104,7 @@ export default function Dashboard(){
       </div>
       <div className='my-[1cm]'><img src="images/arrow.png" onClick={(e) => setMountSmallMenu(false)} className='closedashboardsmallmenu mx-[auto] cursor-pointer' width="50" /></div>
       <div className='mt-[15%] p-[0.5cm]' style={{display:"block"}}>
-       <Link href="https://github.com/jerydam/rootlend/blob/main/README.md"><button onClick={(e) => setMountSmallMenu(false)} className='m-[0.2cm] rounded-md bg-[#209] px-[0.3cm] py-[0.15cm] text-[#fff]'>Docs <img src="images/documentation.png" width="17" className='ml-[0.2cm]' style={{display:"inline-block"}}/></button></Link>
+       <Link href="https://github.com/jerydam/RootLend/blob/master/README.md"><button onClick={(e) => setMountSmallMenu(false)} className='m-[0.2cm] rounded-md bg-[#209] px-[0.3cm] py-[0.15cm] text-[#fff]'>Docs <img src="images/documentation.png" width="17" className='ml-[0.2cm]' style={{display:"inline-block"}}/></button></Link>
        <Link href="https://x.com/rootstock_io?t=t4ABY-X_oq4i55iq3qwurQ&s=09"><img src="images/twitter.png" width="35" className='m-[0.2cm]' onClick={(e) => setMountSmallMenu(false)} style={{display:"inline-block"}}/></Link>
       </div>
    </div>
