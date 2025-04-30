@@ -145,7 +145,9 @@ Search and pagination functionalities further enhance the usability of this powe
 To start lending, users can easily navigate and interact with the available action buttons provided within the dApp.
 * Fund loan: This button allows users to fund loans created by other borrowers. To ensure fairness, the system prevents users from funding their own loans.
 In addition to manual funding, RootLend integrates an AI-powered funding system that automates loan evaluation and fulfillment. This system uses a Vercel Cron job to trigger a Next.js API route once every day. The API fetches all active loan requests, and the AI logic checks each one against predefined criteria—such as minimum interest rate and maximum loan amount. 
+
 **The API can be found in the "/api/ai_fund_bot.js/" directory. And the cron job can be found in the "vercel.json" file in the root folder.**
+
 If a loan meets the criteria, the AI automatically initiates funding using a secure smart contract function, ensuring efficient loan matching and reducing wait times for borrowers—without requiring manual interaction.
 * Claim collateral: The claim collateral button is typically available for the lender to use in case a borrower fails to repay a loan during the specified duration in the loan. You can only claim collateral of a loan you funded.
 * Withdraw loan: This button can be used by the borrower of a loan to withdraw the loan after it has been funded by a lender.
