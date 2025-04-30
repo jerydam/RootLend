@@ -412,21 +412,17 @@ function fundLoan(uint _loanId) external payable onlyActiveLoan(_loanId) {
 Automatically funds eligible loans using an AI-driven backend process.
 
 ```solidity
-function aiFundLoan(uint _loanId) external payable onlyActiveLoan(_loanId) {
-    Loan storage loan = loans[_loanId];
-    require(msg.sender != loan.borrower, "Borrower cannot fund their own loan");
+    function aiFundLoan(uint _loanId, address _funder) external payable onlyAiOperator onlyActiveLoan(_loanId) {
+        Loan storage loan = loans[_loanId];
+        require(_funder != loan.borrower, "Borrower cannot fund");
+        require(block.timestamp <= loan.fundingDeadline, "Funding deadline passed");
 
-    if (block.timestamp > loan.fundingDeadline) {
-        loan.active = false;
-        revert("deadline passed");
+        payable(_funder).transfer(loan.amount);
+        loan.lender = payable(_funder);
+        outstanding[loan.borrower] = true;
+
+        emit LoanFunded(_loanId, _funder, loan.amount);
     }
-
-    payable(loan.borrower).transfer(msg.value);
-    loan.lender = payable(msg.sender);
-    outstanding[loan.borrower] = true;
-
-    emit LoanFunded(_loanId, msg.sender, msg.value);
-}
 ```
 
 
