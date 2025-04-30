@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{background-color: #000; color:#fff}
+
+@media screen and (max-width:1007px) {
+    .headerdivforlarge{display: none;} 
+}
+
+@media screen and (min-width:1007px) {
+    .headerdivforsmallandmedium{display: none;}
+}
+
+  .menuitems{transition: 0.3s ease-in-out;}
+  .menuitems:hover{transform:scale3d(1.1,1.1,1.1)}
+
+  .menuitems2{transition: 0.3s ease-in-out;}
+  .menuitems2:hover{transform:scale3d(1.05,1.05,1.05)}
+
+  .menuitems3{transition: 0.3s ease-in-out;cursor: pointer;}
+  .menuitems3:hover{font-size: 110%;}
+
+  .menuitems4{transition: 0.3s ease-in-out;cursor: pointer;}
+  .menuitems4:hover{font-size: 120%;}
+
+   button{transition: 0.3s ease-in-out;}
+  .generalbutton{transition: 0.3s ease-in-out;}
+  .generalbutton:hover{background-color: #20f; transform: scale3d(0.95,0.95,0.95);}
+  .ecobutton:hover + .docbutton + .daobutton{filter: blur(3px);}
+  .ecobutton:hover + .daobutton{filter: blur(3px);}
+  .generalbutton2{transition: 0.3s ease-in-out;}
+  .generalbutton2:hover{background-color: #000; filter: blur(1px); transform: scale3d(0.95,0.95,0.95);}
+  .generalbutton3{transition: 0.3s ease-in-out;}
+  .generalbutton3:hover{background-color: #00f; transform: scale3d(0.95,0.95,0.95);}
+  .generalbutton4{transition: 0.3s ease-in-out;}
+  .generalbutton4:hover{transform: scale3d(0.95,0.95,0.95);}
+
+  @media screen and (min-width:1007px) {
+    .firstsectiondiv{background-repeat: no-repeat; background-size: 100%; background-position-x: 50%; background-position-y: -30%;}
+   }
+  
+   @media screen and (max-width:1007px) {
+    .firstsectiondiv{background-position-x: 15%; background-position-y: 30%; background-repeat: no-repeat;}
+   }
+
+   .loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #209;
+    mask: radial-gradient(circle closest-side at 50% 40%,#0000 94%, #000);
+    transform-origin: 50% 40%;
+    animation: l25 0.5s infinite linear;
+  }
+  
+  @keyframes l25 {
+    100% {transform: rotate(1turn)}
+  }
+
+
+  .cryptochartdiv{background-image: linear-gradient(45deg, #00f, #001, #100, #209, #010, #2b2202);}
+
+  @keyframes displayAnimation1 {0%{display: block;} 50%{display: block;} 51%{display: none;}  100%{display: none;}}
+  @keyframes displayAnimation2{0%{display: none;}  51%{display: none;} 52%{display: block;} 100%{display: block;}}
+  .info1{animation: displayAnimation1 15s linear infinite;}
+  .info2{animation: displayAnimation2 15s linear infinite;}
+
+@media screen and (max-width:1007px) {
+   .dashboardmenu{display: none;}
+   .dashboarditems{width:100%}
+}
+
+@media screen and (min-width:1007px) {
+  .dashboardmenu{display: inline-block; width: 15%;}
+  .dashboarditems{width:85%; display: inline-block; float:right;}
+}
+ 
+ @keyframes dAppAnimation{0%{} 100%{box-shadow: 2px 2px 7px 4px #209;}}
+ .dAppdivs{animation: dAppAnimation 2s alternate infinite;}
+
+ @keyframes blurAnimation1 {0%{transform: translate3d(0, -20px, -40px)} 40%{filter: blur(50px);} 55%{transform: translate3d(0, 20px, 0)} 75%{ transform: scale3d(1.2,1.2,1.2)} 100%{transform: translate3d(20px, 0px, 0)}}
+ @keyframes blurAnimation2 {0%{transform: translate3d(-40px, -15px, -40px)} 35%{transform: translate3d(30px, 75px, 0)} 65%{ transform: scale3d(1.2,1.2,1.2)} 85%{transform: translate3d(40px, -20px, 0)} 100%{filter: blur(25px);}}
+ .blurimage1{transition: 0.5s ease-in-out; filter: blur(20px); animation: blurAnimation1 10s alternate infinite;}
+ .blurimage1:hover{filter:none;}
+ .blurimage2{transition: 0.5s ease-in-out; filter: blur(5px); animation: blurAnimation2 10s alternate infinite;}
+ .blurimage2:hover{filter:none;}
+
+ @media screen and (min-width:1007px) {
+  .dashboardmenulg{width:17%;}
+}
+
+@media screen and (max-width:1007px) {
+  .dashboardmenulg{display: none;}
+}
+
+@media screen and (min-width:1007px) {
+  .ecosystemcomponentsarea{width:83%; margin-left: 17%;}
+}
+
+@media screen and (max-width:1007px) {
+  .ecosystemcomponentsarea{width:100%}
+}
+
+@media screen and (min-width:1007px) {
+  .dashboardsmallmenubar{display: none;}
+}
+
+@media screen and (max-width:1007px) {
+  .dashboardsmallmenubar{display: block;}
+}
+
+@media screen and (min-width:1007px) {
+  .dashboardmenusm{display: none;}
+}
+
+@media screen and (max-width:1007px) {
+  .dashboardmenusm{display: block;}
+}
+
+.closedashboardsmallmenu{filter: blur(3px); transition: 0.3s ease-in-out;}
+.closedashboardsmallmenu:hover{filter: none;}
+
+ @keyframes dashboardcomponentAnimation{0%{} 20%{box-shadow: 2px 2px 10px 4px #209;} 40%{box-shadow: 2px 2px 10px 4px #00f;} 60%{box-shadow: 2px 2px 10px 4px #fff;} 80%{box-shadow: 2px 2px 10px 4px #f00;} 100%{box-shadow: 2px 2px 10px 4px #d7b644;}}
+ .dashboardcomponent{animation: dashboardcomponentAnimation 5s alternate;}
+
+ @keyframes joindaocomponentAnimation{0%{} 20%{box-shadow: 2px 2px 5px 4px #209;} 40%{box-shadow: 2px 2px 5px 4px #00f;} 60%{box-shadow: 2px 2px 5px 4px #fff;} 80%{box-shadow: 2px 2px 5px 4px #f00;} 100%{box-shadow: 2px 2px 5px 4px #d7b644;}}
+ .joindao{animation: joindaocomponentAnimation 5s alternate infinite;}
+
+ .cancelbutton{transition: 0.3s ease-in-out;}
+ .cancelbutton:hover{transform: scale3d(1.15,1.15,1.15); box-shadow: 2px 2px 5px 2px #209;}
+
+ .helpinnerdiv{background-image: linear-gradient(345deg, #00f, #001, #100, #209, #010, #2b2202);}
+
+@media screen and (min-width:1007px) {
+  .swapdiv{width:47%; display: inline-block;}
+}
+
+@media screen and (max-width:1007px) {
+  .swapdiv{width:100%}
+}
+
+@media screen and (min-width:1007px) {
+  .switchdiv{width:6%;display: inline-block}
+}
+
+@media screen and (max-width:1007px) {
+  .switchdiv{width:100%;margin-block: 0.3cm;}
+}
+
+@media screen and (min-width:1007px) {
+  .switchimage{margin-top: -2.3cm}
+}
+
+.livepricediv{background-image: linear-gradient(45deg, #000, #001, #100, #111, #001, #000);}
+
+ .switchbutton{transition: 0.5s ease-in-out;}
+ .switchbutton:hover{transform: rotate3d(0,0,1,270deg); font-size: 90%}
+
+ .switchbutton2{transition: 0.5s ease-in-out;}
+ .switchbutton2:hover{transform: rotate3d(0,0,1,90deg); font-size: 90%}
+
+@media screen and (min-width:1007px) {
+  .admindashboard{background-size: 100%; background-repeat:no-repeat; }  
+}
+
+@media screen and (max-width:1007px) {
+  .admindashboard{background-position-x: 47%; background-position-y: 50%; padding-bottom: 80%; background-repeat:no-repeat;} 
+}
+
+.tagsdiv{background-image: linear-gradient(45deg, #111, #000, #001, #111, #222, #002);}
+.socialdiv{background-image: linear-gradient(45deg, #111, #000, #001, #111, #222, #002);}
+.trendingdiv{background-image: linear-gradient(45deg, #111, #000, #001, #111, #222, #002);}
+.viewloansdiv{background-image: linear-gradient(45deg, #111, #222, #001, #111, #222, #110);}
+.viewloansdiv2{background-image: linear-gradient(20deg, #111, #222, #333, #002, #222, #330);}
+.viewmyloansdiv{background-image: linear-gradient(70deg, #111, #222, #222, #111, #222, #110);}
+
+.chatheader{background-image: linear-gradient(90deg, #100, #222, #333, #002, #222, #330);}

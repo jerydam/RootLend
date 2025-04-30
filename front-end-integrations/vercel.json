@@ -1,0 +1,9 @@
+{
+    "cron": {
+      "auto-funder-daily": {
+        "path": "/api/ai_fund_bot",
+        "schedule": "0 0 * * *"
+      }
+    }
+  }
+  
